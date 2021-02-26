@@ -22,3 +22,7 @@ This repo is created as a part of a collaborative assignment for DMST course. Th
 4. Placed the images in the correct position
 5. Edited js file to function properly for each city
 6. Uploaded and submitted the work
+
+
+
+List of Sources Metropolis:https://dc.fandom.com/wiki/Metropolis Gotham:https://dc.fandom.com/wiki/Gotham_City Central:https://dc.fandom.com/wiki/Central_City Star:https://dc.fandom.com/wiki/Central_City Atlantis:https://dc.fandom.com/wiki/Atlantis
