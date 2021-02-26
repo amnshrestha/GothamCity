@@ -22,7 +22,7 @@ a{
 #batmanLogo{
     position: absolute;
     width: 50%;
-    top: 40%;
+    top: 60%;
     left: 50.5%;
     transform: translate(-50%,-45%);
     z-index: 1;
@@ -71,6 +71,8 @@ a{
     margin-top: 1%;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
+    z-index: 200;
+
 }
 
 /* https://en.wikipedia.org/wiki/Gotham_City#/media/File:Gotham_City_Batman_Vol_3_14.png */
@@ -108,6 +110,10 @@ a{
     color: white;
     text-align: left;
     transition: 500ms;
+}
+
+.navBar{
+    z-index: 500;
 }
 
 .navCard{
