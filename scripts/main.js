@@ -87,17 +87,13 @@ $(".eachCard").click(function(){
             newTitle = 'HISTORY';
             newDescription = "The 2011 comic book series Batman: Gates of Gotham details a history of Gotham City in which Alan Wayne (Bruce Wayne's ancestor), Theodore Cobblepot (Oswald Cobblepot's ancestor), and Edward Elliot (Thomas Elliot's ancestor), are the founding fathers of Gotham. In 1881, they constructed three bridges called the Gates of Gotham, each bearing one of their names. Edward became jealous of the Wayne family during this period, jealousy that would spread to his great-great-grandson, Thomas Elliot or Hush. The occult origins of Gotham are further delved into by Peter Milligan's 1990 story arc 'Dark Knight, Dark City',which reveals that some of the American Founding Fathers are involved in summoning a bat-demon which becomes trapped beneath old 'Gotham Town', its dark influence spreading as Gotham City evolves. A similar trend is followed in 2005's Shadowpact #5 by Bill Willingham, which expands upon Gotham's occult heritage by revealing a being who has slept for 40,000 years beneath the land upon which Gotham City was built.";
             break;
-        case 'show':
+        case 'culture':
             newTitle = 'TV-SHOW';
             newDescription = "Gotham is an American action crime drama television series developed by Bruno Heller, produced by Warner Bros. Television and based on characters published by DC Comics and appearing in the Batman franchise, primarily those of James Gordon and Bruce Wayne. The series premiered on Fox on September 20, 2013, and concluded on April 25, 2019. The series although initially intended for Gordon and the city,  included the Bruce Wayne character and the origin stories of Batman's rogues gallery. Development for a prequel series based on Batman began in September 2012, with Bruno Heller hired by Fox to serve as a writer and executive producer. In March 2014, Fox originally ordered 16 episodes for its first season before expanding it to 22.. More information can be found here: https://g.co/kgs/G1PcWQ";
             break;
-        case 'setting':
+        case 'media':
             newTitle = 'SETTING';
             newDescription = "Batman writer and editor Dennis O'Neil has said that, figuratively, Batman's Gotham City is akin to 'Manhattan below Fourteenth Street at eleven minutes past midnight on the coldest night in November.' Batman artist Neal Adams has long believed that Chicago has been the basis for Gotham, stating 'one of the things about Chicago is Chicago has alleys (which are virtually nonexistent in New York). Back alleys, that's where Batman fights all the bad guys.'. This has been an important part of Gotham's setting";
-            break;
-        case 'residents':
-            newTitle = 'NOTABLE RESIDENTS';
-            newDescription = "Bruce Wayne's place of residence is Wayne Manor, which is located on the outskirts of the city. His butler, Alfred Pennyworth, aids Bruce in his crusade to fight crime in Gotham. Over the years, in various Bat titles in the chronological DC Comics continuity, the caped crusader enlists the help of numerous characters, the first being his trusty sidekick, Robin. Although a singular title, many have donned the mantle of the Boy Wonder over the years. The first being Nightwing, then came Red Hood, Red Robin, and finally Batman's son Damian Wayne. In addition to the Robins or former Robins, there is also Catwoman, Batgirl, and Huntress.";
             break;
         default:
             newTitle = 'GOTHAM';
