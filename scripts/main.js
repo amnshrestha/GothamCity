@@ -9,6 +9,8 @@ const initialWidth = $('#batmanLogo').width();
 const maxWidth = 10000;
 const factor = 550;
 
+
+
 var scrolledAmount = 0;
 // 19683
 // 29524.5
@@ -68,12 +70,25 @@ $(window).scroll(function(){
 });
 
 
+var title = $(".title").text();
+console.log("This is the one "+title);
+
+var aquaManArray = ["Atlantis is the ancient sunken kingdom in the the North Atlantic. Actually the size of a continent, it is one of the earliest and most highly advanced cultural and magical societies on Earth. It is further divided into city-states like Poseidonis, Tritonis, Venturia, Shayeris and others. By the 21st Century, it was ruled by King Arthur Curry, the hero known as Aquaman, from the capital Poseidonis."
+                    ,"The Kingdom of Atlantis is an underwater kingdom located somewhere deep in the Atlantic Ocean. It is home to the ancient, isolated, and highly advanced Atlantean culture. Originally part of a larger Atlantean empire, the present day Atlantis is now one of four surviving kingdoms after the Sinking of Atlantis."
+                    ,"Founded by King Atlan, the empire of Atlantis at its peak was the most powerful and technologically advanced nation on the planet. Eventually Atlantis developed a series of new technologies centered upon their greatest achievement - the discovery of an inexhaustible source of energy, allowing the creation of machine walkers, advanced aircraft and the powerful Trident of Atlan. During a test of the Trident, a massive energy pulse violently radiated outward and destroyed Atlantis, causing it to sink into the sea with great loss of life."
+                    ,"Heavily isolated from the surface, the only way into Atlantis is a colossal glowing gate in front of an ancient bridge, guarded by customs and enforced by a massive array of powerful hydro-cannons, Stinger squadrons and Shark cavalry also patrol the gate, Stinger Squadrons also patrol the interior for criminal activities."
+                    ,"Atlantis, is featured across several DC properties, most notably the cartoon series Young Justice as well as the 2018 Aquaman Movie:https://www.imdb.com/title/tt1477834/"
+                    ];
+var selectedArray = aquaManArray;
+
 $(".eachCard").click(function(){ 
     $( ".eachCard" ).each(function() {
         $(this).removeClass('selected');
         // $(this).css("background-color", "rgba(0, 0, 0, 0.8)");
     });
     $(this).addClass('selected');
+
+    
     // $(this).css("background-color", "rgba(70, 70, 70, 0.8)");
     var id = $(this).attr('id');
     var newTitle = '';
@@ -81,23 +96,23 @@ $(".eachCard").click(function(){
     switch(id) {
         case 'geography':
             newTitle = 'GEOGRAPHY';
-            newDescription = "Gotham City, like other cities in the DC Universe, has varied in its portrayals over the decades, but the city's location is traditionally depicted as being in the state of New Jersey. In Amazing World of DC Comics #14 (March 1977), publisher Mark Gruenwald discusses the history of the Justice League and indicates that Gotham City is located in New Jersey. In The World's Greatest Super Heroes (August 13, 1978) comic strip, a map is shown placing Gotham City in New Jersey and Metropolis in Delaware. World's Finest Comics #259 (November 1979) also confirms that Gotham is in New Jersey. New Adventures of Superboy #22 (October 1981) and the 1990 Atlas of the DC Universe both show maps of Gotham City in New Jersey and Metropolis in the state of Delaware.";
+            newDescription = selectedArray[1];
             break;
         case 'history':
             newTitle = 'HISTORY';
-            newDescription = "The 2011 comic book series Batman: Gates of Gotham details a history of Gotham City in which Alan Wayne (Bruce Wayne's ancestor), Theodore Cobblepot (Oswald Cobblepot's ancestor), and Edward Elliot (Thomas Elliot's ancestor), are the founding fathers of Gotham. In 1881, they constructed three bridges called the Gates of Gotham, each bearing one of their names. Edward became jealous of the Wayne family during this period, jealousy that would spread to his great-great-grandson, Thomas Elliot or Hush. The occult origins of Gotham are further delved into by Peter Milligan's 1990 story arc 'Dark Knight, Dark City',which reveals that some of the American Founding Fathers are involved in summoning a bat-demon which becomes trapped beneath old 'Gotham Town', its dark influence spreading as Gotham City evolves. A similar trend is followed in 2005's Shadowpact #5 by Bill Willingham, which expands upon Gotham's occult heritage by revealing a being who has slept for 40,000 years beneath the land upon which Gotham City was built.";
+            newDescription = selectedArray[2];
             break;
         case 'culture':
-            newTitle = 'TV-SHOW';
-            newDescription = "Gotham is an American action crime drama television series developed by Bruno Heller, produced by Warner Bros. Television and based on characters published by DC Comics and appearing in the Batman franchise, primarily those of James Gordon and Bruce Wayne. The series premiered on Fox on September 20, 2013, and concluded on April 25, 2019. The series although initially intended for Gordon and the city,  included the Bruce Wayne character and the origin stories of Batman's rogues gallery. Development for a prequel series based on Batman began in September 2012, with Bruno Heller hired by Fox to serve as a writer and executive producer. In March 2014, Fox originally ordered 16 episodes for its first season before expanding it to 22.. More information can be found here: https://g.co/kgs/G1PcWQ";
+            newTitle = 'Culture';
+            newDescription = selectedArray[3];
             break;
         case 'media':
-            newTitle = 'SETTING';
-            newDescription = "Batman writer and editor Dennis O'Neil has said that, figuratively, Batman's Gotham City is akin to 'Manhattan below Fourteenth Street at eleven minutes past midnight on the coldest night in November.' Batman artist Neal Adams has long believed that Chicago has been the basis for Gotham, stating 'one of the things about Chicago is Chicago has alleys (which are virtually nonexistent in New York). Back alleys, that's where Batman fights all the bad guys.'. This has been an important part of Gotham's setting";
+            newTitle = 'Media';
+            newDescription = selectedArray[4];
             break;
         default:
             newTitle = 'GOTHAM';
-            newDescription = "Gotham is a fictional city appearing in comic books published by DC Comics, best known as the home of Batman. The city was identified as Batman's place of residence in Batman #4 (December 1940) and has since been the primary setting for stories featuring the character. Gotham is traditionally depicted as being located in the U.S. state of New Jersey. Gotham's look and atmosphere was primarily influenced by New York City and Chicago, although it was designed to more generally resemble any major American city. Strega, the being's servant, says that the 'dark and often cursed character' of the city was influenced by the being who now uses the name 'Doctor Gotham.'";
+            newDescription = selectedArray[0];
             break;
     }
     var titleToChange = $('.title');
